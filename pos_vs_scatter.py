@@ -17,9 +17,9 @@ def pos(data, stat1, stat2):
     plt.figure(facecolor='#FFFFFF')
     ax =plt.gca()
     ax.set_facecolor('#FFFFFF')
-    plt.scatter(fw_data[stat1],fw_data[stat2],s=50,c='#FF0000')
-    plt.scatter(mid_data[stat1],mid_data[stat2],s=50,c='#00FF00')
-    plt.scatter(lw_data[stat1],lw_data[stat2],s=50,c='#0000FF')
+    plt.scatter(fw_data[stat1],fw_data[stat2],s=50,c='#FF0000') #R => FW
+    plt.scatter(mid_data[stat1],mid_data[stat2],s=50,c='#00FF00') #G => MID
+    plt.scatter(lw_data[stat1],lw_data[stat2],s=50,c='#0000FF') #B => LW
     plt.xlabel(stat1)
     plt.ylabel(stat2)
     plt.tick_params(axis='y',direction='in',labelsize=15,pad=5,length=10,color='#7B7D7D',labelcolor='#7B7D7D')
@@ -31,4 +31,4 @@ def pos(data, stat1, stat2):
     plt.show()
 
 summary_data=dataget('Cody-Gakpo/Cody-Gakpo_summary.csv')
-pos(summary_data,'Take-Ons Succ', 'Take-Ons Att')
+pos(summary_data,'Take-Ons Succ', 'Take-Ons Att') #비교 스텟 바꿔가면서 반복
