@@ -34,12 +34,13 @@ def process_match_logs(url_df, log_type):
     df = df[df['Report'] == 'Match Report']
     df = df[df['Squad'] == 'Liverpool']
     df = df[df['Pos'] != 'On matchday squad, but did not play']
+    df = df[df['Comp'] != 'EFL Cup']
 
     # DataFrame을 CSV 파일로 저장
     df.to_csv(f'{player_name}/{player_name}_{log_type.lower()}.csv', index=False)
 
 # 선수 이름 바꾸면서 스크래핑
-player_name = 'Darwin-Nunez' 
+player_name = 'Ryan-Gravenberch' 
 url_possession = f'https://fbref.com/en/players/1971591f/matchlogs/2023-2024/possession/{player_name}-Match-Logs'
 process_match_logs(url_possession, 'Possession')
 
