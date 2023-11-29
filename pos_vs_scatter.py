@@ -24,11 +24,11 @@ def pos(data, stat1, stat2):
     plt.ylabel(stat2)
     plt.tick_params(axis='y',direction='in',labelsize=15,pad=5,length=10,color='#7B7D7D',labelcolor='#7B7D7D')
     plt.tick_params(axis='x',direction='in',labelsize=15,pad=5,length=10,color='#7B7D7D',labelcolor='#7B7D7D')
-    plt.title(stat1+'&'+stat2,c='#7B7D7D',size=15)
+    plt.title(stat2+'&'+stat1,c='#7B7D7D',size=15)
     
     #이미지 파일로 저장하기.
-    plt.savefig('VS_Position/'+stat1+'&'+stat2+'.png',dpi=300)
+    plt.savefig('VS_Position/'+stat2+'&'+stat1+'.png',dpi=300)
     plt.show()
 
 summary_data=dataget('Cody-Gakpo/Cody-Gakpo_summary.csv')
-pos(summary_data,'Take-Ons Succ', 'Take-Ons Att') #비교 스텟 바꿔가면서 반복
+pos(summary_data,'Take-Ons Att', 'Take-Ons Succ') #비교 스텟 바꿔가면서 반복

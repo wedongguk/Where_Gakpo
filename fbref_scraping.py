@@ -40,15 +40,16 @@ def process_match_logs(url_df, log_type):
     df.to_csv(f'{player_name}/{player_name}_{log_type.lower()}.csv', index=False)
 
 # 선수 이름 바꾸면서 스크래핑
-player_name = 'Ryan-Gravenberch' 
-url_possession = f'https://fbref.com/en/players/1971591f/matchlogs/2023-2024/possession/{player_name}-Match-Logs'
+player_name = 'Harvey-Elliott' 
+player_id = 'b9e1436c'
+url_possession = f'https://fbref.com/en/players/{player_id}/matchlogs/2023-2024/possession/{player_name}-Match-Logs'
 process_match_logs(url_possession, 'Possession')
 
-url_defense = f'https://fbref.com/en/players/1971591f/matchlogs/2023-2024/defense/{player_name}-Match-Logs'
+url_defense = f'https://fbref.com/en/players/{player_id}/matchlogs/2023-2024/defense/{player_name}-Match-Logs'
 process_match_logs(url_defense, 'Defense')
 
-url_passing = f'https://fbref.com/en/players/1971591f/matchlogs/2023-2024/passing/{player_name}-Match-Logs'
+url_passing = f'https://fbref.com/en/players/{player_id}/matchlogs/2023-2024/passing/{player_name}-Match-Logs'
 process_match_logs(url_passing, 'Passing')
 
-url_summary = f'https://fbref.com/en/players/1971591f/matchlogs/2023-2024/{player_name}-Match-Logs'
+url_summary = f'https://fbref.com/en/players/{player_id}/matchlogs/2023-2024/{player_name}-Match-Logs'
 process_match_logs(url_summary, 'Summary')
