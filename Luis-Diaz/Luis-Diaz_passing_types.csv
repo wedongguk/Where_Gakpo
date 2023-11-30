@@ -1,0 +1,16 @@
+Date,Day,Comp,Round,Venue,Result,Squad,Opponent,Start,Pos,Min,Att,Pass Types Live,Pass Types Dead,Pass Types FK,Pass Types TB,Pass Types Sw,Pass Types Crs,Pass Types TI,Pass Types CK,Corner Kicks In,Corner Kicks Out,Corner Kicks Str,Outcomes Cmp,Outcomes Off,Outcomes Blocks,Report
+2023-08-13,Sun,Premier League,Matchweek 1,Away,D 1–1,Liverpool,Chelsea,Y,LW,76,20,20,0,0,0,0,0,0,0,0,0,0,18,0,0,Match Report
+2023-08-19,Sat,Premier League,Matchweek 2,Home,W 3–1,Liverpool,Bournemouth,Y,"LW,LM",85,40,40,0,0,0,1,0,0,0,0,0,0,32,0,1,Match Report
+2023-08-27,Sun,Premier League,Matchweek 3,Away,W 2–1,Liverpool,Newcastle Utd,Y,LW,32,4,4,0,0,1,0,0,0,0,0,0,0,2,0,1,Match Report
+2023-09-03,Sun,Premier League,Matchweek 4,Home,W 3–0,Liverpool,Aston Villa,Y,LW,64,27,27,0,0,0,0,0,0,0,0,0,0,22,0,0,Match Report
+2023-09-16,Sat,Premier League,Matchweek 5,Away,W 3–1,Liverpool,Wolves,N,"LW,LM",45,34,33,1,0,0,0,0,1,0,0,0,0,26,0,3,Match Report
+2023-09-21,Thu,Europa Lg,Group stage,Away,W 3–1,Liverpool,at LASK,Y,LW,90,46,45,1,0,1,1,0,1,0,0,0,0,36,0,1,Match Report
+2023-09-24,Sun,Premier League,Matchweek 6,Home,W 3–1,Liverpool,West Ham,Y,LW,80,27,26,1,0,0,0,1,1,0,0,0,0,21,0,1,Match Report
+2023-09-30,Sat,Premier League,Matchweek 7,Away,L 1–2,Liverpool,Tottenham,Y,"LM,LW",72,24,21,3,0,1,0,0,3,0,0,0,0,16,0,1,Match Report
+2023-10-05,Thu,Europa Lg,Group stage,Home,W 2–0,Liverpool,be Union SG,N,LW,45,10,10,0,0,0,0,0,0,0,0,0,0,9,0,0,Match Report
+2023-10-08,Sun,Premier League,Matchweek 8,Away,D 2–2,Liverpool,Brighton,Y,LW,90,27,26,1,0,0,0,0,0,0,0,0,0,23,0,0,Match Report
+2023-10-21,Sat,Premier League,Matchweek 9,Home,W 2–0,Liverpool,Everton,Y,"LW,LB",80,46,43,2,0,0,0,2,2,0,0,0,0,38,1,0,Match Report
+2023-11-05,Sun,Premier League,Matchweek 11,Away,D 1–1,Liverpool,Luton Town,N,LW,8,9,9,0,0,0,0,2,0,0,0,0,0,7,0,1,Match Report
+2023-11-09,Thu,Europa Lg,Group stage,Away,L 2–3,Liverpool,fr Toulouse,Y,LW,80,24,23,1,0,0,0,2,1,0,0,0,0,21,0,0,Match Report
+2023-11-12,Sun,Premier League,Matchweek 12,Home,W 3–0,Liverpool,Brentford,N,LW,8,4,4,0,0,0,0,0,0,0,0,0,0,2,0,0,Match Report
+2023-11-25,Sat,Premier League,Matchweek 13,Away,D 1–1,Liverpool,Manchester City,N,LW,37,9,9,0,0,0,0,0,0,0,0,0,0,6,0,0,Match Report

@@ -1,0 +1,14 @@
+Date,Day,Comp,Round,Venue,Result,Squad,Opponent,Start,Pos,Min,Att,Pass Types Live,Pass Types Dead,Pass Types FK,Pass Types TB,Pass Types Sw,Pass Types Crs,Pass Types TI,Pass Types CK,Corner Kicks In,Corner Kicks Out,Corner Kicks Str,Outcomes Cmp,Outcomes Off,Outcomes Blocks,Report
+2023-08-13,Sun,Premier League,Matchweek 1,Away,D 1–1,Liverpool,Chelsea,Y,LM,65,15,14,0,0,0,0,1,0,0,0,0,0,10,1,1,Match Report
+2023-08-19,Sat,Premier League,Matchweek 2,Home,W 3–1,Liverpool,Bournemouth,Y,LM,62,25,25,0,0,0,0,0,0,0,0,0,0,20,0,1,Match Report
+2023-08-27,Sun,Premier League,Matchweek 3,Away,W 2–1,Liverpool,Newcastle Utd,Y,"FW,LM",57,8,7,1,0,0,0,1,1,0,0,0,0,5,0,1,Match Report
+2023-09-03,Sun,Premier League,Matchweek 4,Home,W 3–0,Liverpool,Aston Villa,N,FW,26,3,3,0,0,0,0,1,0,0,0,0,0,2,0,0,Match Report
+2023-09-16,Sat,Premier League,Matchweek 5,Away,W 3–1,Liverpool,Wolves,Y,FW,55,13,12,1,0,0,0,0,0,0,0,0,0,10,0,0,Match Report
+2023-09-24,Sun,Premier League,Matchweek 6,Home,W 3–1,Liverpool,West Ham,N,FW,10,8,8,0,0,0,0,0,0,0,0,0,0,4,0,0,Match Report
+2023-09-30,Sat,Premier League,Matchweek 7,Away,L 1–2,Liverpool,Tottenham,Y,"FW,RM",45,11,11,0,0,0,0,0,0,0,0,0,0,9,0,2,Match Report
+2023-10-26,Thu,Europa Lg,Group stage,Home,W 5–1,Liverpool,fr Toulouse,N,FW,25,11,11,0,0,1,0,1,0,0,0,0,0,9,0,0,Match Report
+2023-10-29,Sun,Premier League,Matchweek 10,Home,W 3–0,Liverpool,Nott'ham Forest,N,LW,33,17,17,0,0,0,0,0,0,0,0,0,0,12,0,0,Match Report
+2023-11-05,Sun,Premier League,Matchweek 11,Away,D 1–1,Liverpool,Luton Town,N,"RM,LW",25,5,5,0,0,0,0,0,0,0,0,0,0,4,0,1,Match Report
+2023-11-09,Thu,Europa Lg,Group stage,Away,L 2–3,Liverpool,fr Toulouse,Y,FW,72,19,13,6,3,0,0,6,0,3,0,3,0,13,0,0,Match Report
+2023-11-12,Sun,Premier League,Matchweek 12,Home,W 3–0,Liverpool,Brentford,Y,LM,82,33,31,2,2,0,0,0,0,0,0,0,0,30,0,0,Match Report
+2023-11-25,Sat,Premier League,Matchweek 13,Away,D 1–1,Liverpool,Manchester City,N,"FW,RM",18,4,4,0,0,0,0,0,0,0,0,0,0,2,0,0,Match Report
