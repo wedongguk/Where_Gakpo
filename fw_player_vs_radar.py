@@ -6,6 +6,17 @@ import matplotlib.pyplot as plt
 def dataget(url):
     df=pd.read_csv(url)
     return df
+
+def append_data(value, data):
+    value.append((data['Performance Gls'].sum() / (data['Min'].sum() / 90)) / (data['Expected xG'].sum() / (data['Min'].sum() / 90)) if data['Expected xG'].sum() != 0 else 0.0)
+    value.append((data['Performance Ast'].sum() / (data['Min'].sum() / 90)) / (data['Expected xAG'].sum() / (data['Min'].sum() / 90)) if data['Expected xAG'].sum() != 0 else 0.0)
+    value.append((data['Touches Att Pen'].sum() / (data['Min'].sum() / 90)) / (data['Touches Touches'].sum() / (data['Min'].sum() / 90)) if data['Touches Touches'].sum() != 0 else 0.0)
+    value.append((data['Touches Att 3rd'].sum() / (data['Min'].sum() / 90)) / (data['Touches Touches'].sum() / (data['Min'].sum() / 90)) if data['Touches Touches'].sum() != 0 else 0.0)
+    value.append((data['Carries CPA'].sum() / (data['Min'].sum() / 90)) / (data['Carries Carries'].sum() / (data['Min'].sum() / 90)) if data['Carries Carries'].sum() != 0 else 0.0)
+    value.append((data['Carries 1/3'].sum() / (data['Min'].sum() / 90)) / (data['Carries Carries'].sum() / (data['Min'].sum() / 90)) if data['Carries Carries'].sum() != 0 else 0.0)
+    value.append((data['SCA GCA'].sum() / (data['Min'].sum() / 90)) / (data['SCA SCA'].sum() / (data['Min'].sum() / 90)) if data['SCA SCA'].sum() != 0 else 0.0)
+    value.append((data['Performance SoT'].sum() / (data['Min'].sum() / 90)) / (data['Performance Sh'].sum() / (data['Min'].sum() / 90)) if data['Performance Sh'].sum() != 0 else 0.0)
+
 def fw_radar(player1, player2, player3):
     categories = ['Finishing', 'Assist', 'BOX Touch', '3rd Touch', 'Box Carry', '3rd Carry', 'GCA', 'Shooting']
     cody_value = []
@@ -16,32 +27,9 @@ def fw_radar(player1, player2, player3):
     diogo_data = player2[player2['Pos'].str.contains('FW')]
     darwin_data = player3[player3['Pos'].str.contains('FW')]
     
-    cody_value.append((cody_data['Performance Gls'].sum()/(cody_data['Min'].sum()/90))/(cody_data['Expected xG'].sum()/(cody_data['Min'].sum()/90)))
-    cody_value.append((cody_data['Performance Ast'].sum()/(cody_data['Min'].sum()/90))/(cody_data['Expected xAG'].sum()/(cody_data['Min'].sum()/90)))
-    cody_value.append((cody_data['Touches Att Pen'].sum()/(cody_data['Min'].sum()/90))/(cody_data['Touches Touches'].sum()/(cody_data['Min'].sum()/90)))
-    cody_value.append((cody_data['Touches Att 3rd'].sum()/(cody_data['Min'].sum()/90))/(cody_data['Touches Touches'].sum()/(cody_data['Min'].sum()/90)))
-    cody_value.append((cody_data['Carries CPA'].sum()/(cody_data['Min'].sum()/90))/(cody_data['Carries Carries'].sum()/(cody_data['Min'].sum()/90)))
-    cody_value.append((cody_data['Carries 1/3'].sum()/(cody_data['Min'].sum()/90))/(cody_data['Carries Carries'].sum()/(cody_data['Min'].sum()/90)))
-    cody_value.append((cody_data['SCA GCA'].sum()/(cody_data['Min'].sum()/90))/(cody_data['SCA SCA'].sum()/(cody_data['Min'].sum()/90)))
-    cody_value.append((cody_data['Performance SoT'].sum()/(cody_data['Min'].sum()/90))/(cody_data['Performance Sh'].sum()/(cody_data['Min'].sum()/90)))
-    
-    diogo_value.append((diogo_data['Performance Gls'].sum()/(diogo_data['Min'].sum()/90))/(diogo_data['Expected xG'].sum()/(diogo_data['Min'].sum()/90)))
-    diogo_value.append((diogo_data['Performance Ast'].sum()/(diogo_data['Min'].sum()/90))/(diogo_data['Expected xAG'].sum()/(diogo_data['Min'].sum()/90)))
-    diogo_value.append((diogo_data['Touches Att Pen'].sum()/(diogo_data['Min'].sum()/90))/(diogo_data['Touches Touches'].sum()/(diogo_data['Min'].sum()/90)))
-    diogo_value.append((diogo_data['Touches Att 3rd'].sum()/(diogo_data['Min'].sum()/90))/(diogo_data['Touches Touches'].sum()/(diogo_data['Min'].sum()/90)))
-    diogo_value.append((diogo_data['Carries CPA'].sum()/(diogo_data['Min'].sum()/90))/(diogo_data['Carries Carries'].sum()/(diogo_data['Min'].sum()/90)))
-    diogo_value.append((diogo_data['Carries 1/3'].sum()/(diogo_data['Min'].sum()/90))/(diogo_data['Carries Carries'].sum()/(diogo_data['Min'].sum()/90)))
-    diogo_value.append((diogo_data['SCA GCA'].sum()/(diogo_data['Min'].sum()/90))/(diogo_data['SCA SCA'].sum()/(diogo_data['Min'].sum()/90)))
-    diogo_value.append((diogo_data['Performance SoT'].sum()/(diogo_data['Min'].sum()/90))/(diogo_data['Performance Sh'].sum()/(diogo_data['Min'].sum()/90)))
-    
-    darwin_value.append((darwin_data['Performance Gls'].sum()/(darwin_data['Min'].sum()/90))/(darwin_data['Expected xG'].sum()/(darwin_data['Min'].sum()/90)))
-    darwin_value.append((darwin_data['Performance Ast'].sum()/(darwin_data['Min'].sum()/90))/(darwin_data['Expected xAG'].sum()/(darwin_data['Min'].sum()/90)) if darwin_data['Expected xAG'].sum() != 0 else 0.0)
-    darwin_value.append((darwin_data['Touches Att Pen'].sum()/(darwin_data['Min'].sum()/90))/(darwin_data['Touches Touches'].sum()/(darwin_data['Min'].sum()/90)))
-    darwin_value.append((darwin_data['Touches Att 3rd'].sum()/(darwin_data['Min'].sum()/90))/(darwin_data['Touches Touches'].sum()/(darwin_data['Min'].sum()/90)))
-    darwin_value.append((darwin_data['Carries CPA'].sum()/(darwin_data['Min'].sum()/90))/(darwin_data['Carries Carries'].sum()/(darwin_data['Min'].sum()/90)))
-    darwin_value.append((darwin_data['Carries 1/3'].sum()/(darwin_data['Min'].sum()/90))/(darwin_data['Carries Carries'].sum()/(darwin_data['Min'].sum()/90)))
-    darwin_value.append((darwin_data['SCA GCA'].sum()/(darwin_data['Min'].sum()/90))/(darwin_data['SCA SCA'].sum()/(darwin_data['Min'].sum()/90)))
-    darwin_value.append((darwin_data['Performance SoT'].sum()/(darwin_data['Min'].sum()/90))/(darwin_data['Performance Sh'].sum()/(darwin_data['Min'].sum()/90)))
+    append_data(cody_value, cody_data)
+    append_data(diogo_value, diogo_data)
+    append_data(darwin_value, darwin_data)
     
     # 각도 계산
     num_vars = len(categories)
