@@ -27,7 +27,7 @@ def lw_player_scatter(player1, player2, player3, stat1, stat2):
     plt.title(stat2+'&'+stat1,c='#7B7D7D',size=15)
     
     #이미지 파일로 저장하기.
-    plt.savefig('VS_lw_player/'+stat2+'&'+stat1+'.png',dpi=300)
+    plt.savefig('VS_lw_player/img/'+stat2+'&'+stat1+'.png',dpi=300)
     plt.show()
 
 cody_gakpo_data=dataget('csv/Cody-Gakpo/Cody-Gakpo_merged.csv')

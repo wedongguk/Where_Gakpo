@@ -54,7 +54,7 @@ def pos_radar(data):
     ax.set_rlabel_position(180)
 
     # 그래프 표시
-    plt.savefig('VS_Position/vs_pos_radar.png',dpi=300)
+    plt.savefig('VS_Position/img/vs_pos_radar.png',dpi=300)
     plt.show()
     
     print(fw_value)

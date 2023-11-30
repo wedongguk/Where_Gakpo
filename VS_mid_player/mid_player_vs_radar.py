@@ -71,7 +71,7 @@ def fw_radar(player1, player2, player3, player4, player5):
     ax.set_rlabel_position(180)
 
     # 그래프 표시
-    plt.savefig('VS_mid_player/vs_mid_radar.png',dpi=300)
+    plt.savefig('VS_mid_player/img/vs_mid_radar.png',dpi=300)
     plt.show()
     
 

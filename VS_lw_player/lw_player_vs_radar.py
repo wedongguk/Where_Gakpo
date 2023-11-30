@@ -55,7 +55,7 @@ def fw_radar(player1, player2, player3):
     ax.set_rlabel_position(180)
 
     # 그래프 표시
-    plt.savefig('VS_lw_player/vs_lw_radar.png',dpi=300)
+    plt.savefig('VS_lw_player/img/vs_lw_radar.png',dpi=300)
     plt.show()
     
     print(cody_value)
