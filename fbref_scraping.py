@@ -38,6 +38,27 @@ def process_match_logs(url_df, log_type):
 
     # DataFrame을 CSV 파일로 저장
     df.to_csv(f'{player_name}/{player_name}_{log_type.lower()}.csv', index=False)
+    
+def merged_csv(player):
+    df1 = pd.read_csv(f'{player}/{player}_summary.csv')
+    df2 = pd.read_csv(f'{player}/{player}_possession.csv')
+    df3 = pd.read_csv(f'{player}/{player}_defense.csv')
+    df4 = pd.read_csv(f'{player}/{player}_passing.csv')
+
+    # 두 데이터프레임을 합치기
+    common_columns = set(df1.columns) & set(df2.columns)
+    merged_df = pd.merge(df1, df2, how='outer', on=list(common_columns))
+    common_columns = set(merged_df.columns) & set(df3.columns)
+    merged_df = pd.merge(merged_df, df3, how='outer', on=list(common_columns))
+    common_columns = set(merged_df.columns) & set(df4.columns)
+    merged_df = pd.merge(merged_df, df4, how='outer', on=list(common_columns))
+
+    # merged_df = pd.concat([df1, df2], ignore_index=True)
+    # merged_df = pd.concat([merged_df, df3], ignore_index=True)
+    # merged_df = pd.concat([merged_df, df4], ignore_index=True)
+
+    # 합친 데이터프레임을 CSV 파일로 저장
+    merged_df.to_csv(f'{player}/{player}_merged.csv', index=False)
 
 # 선수 이름 바꾸면서 스크래핑
 player_name = 'Harvey-Elliott' 
@@ -53,3 +74,5 @@ process_match_logs(url_passing, 'Passing')
 
 url_summary = f'https://fbref.com/en/players/{player_id}/matchlogs/2023-2024/{player_name}-Match-Logs'
 process_match_logs(url_summary, 'Summary')
+ 
+merged_csv(player_name)
