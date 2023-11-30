@@ -75,10 +75,10 @@ def fw_radar(player1, player2, player3, player4, player5):
     plt.show()
     
 
-cody_gakpo_data=dataget('Cody-Gakpo/Cody-Gakpo_merged.csv')
-curtis_jones_data=dataget('Diogo-Jota/Diogo-Jota_merged.csv')
-dominik_szoboszlai_data=dataget('Dominik-Szoboszlai/Dominik-Szoboszlai_merged.csv')
-harvey_elliott_data=dataget('Harvey-Elliott/Harvey-Elliott_merged.csv')
-ryan_Gravenberch_data=dataget('Ryan-Gravenberch/Ryan-Gravenberch_merged.csv')
+cody_gakpo_data=dataget('csv/Cody-Gakpo/Cody-Gakpo_merged.csv')
+curtis_jones_data=dataget('csv/Diogo-Jota/Diogo-Jota_merged.csv')
+dominik_szoboszlai_data=dataget('csv/Dominik-Szoboszlai/Dominik-Szoboszlai_merged.csv')
+harvey_elliott_data=dataget('csv/Harvey-Elliott/Harvey-Elliott_merged.csv')
+ryan_Gravenberch_data=dataget('csv/Ryan-Gravenberch/Ryan-Gravenberch_merged.csv')
 
 fw_radar(cody_gakpo_data, curtis_jones_data, dominik_szoboszlai_data, harvey_elliott_data, ryan_Gravenberch_data)

@@ -30,5 +30,5 @@ def pos(data, stat1, stat2):
     plt.savefig('VS_Position/'+stat2+'&'+stat1+'.png',dpi=300)
     plt.show()
 
-data=dataget('Cody-Gakpo/Cody-Gakpo_merged.csv')
+data=dataget('csv/Cody-Gakpo/Cody-Gakpo_merged.csv')
 pos(data,'Carries Carries', 'Carries PrgC') #비교 스텟 바꿔가면서 반복

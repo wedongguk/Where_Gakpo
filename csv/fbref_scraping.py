@@ -13,8 +13,8 @@ def process_match_logs(url_df, log_type):
         print("이름을 찾을 수 없습니다.")
     
     # 디렉토리 생성 (이미 존재하면 생성하지 않음)
-    if not os.path.exists(player_name):
-        os.makedirs(player_name)
+    if not os.path.exists(f'csv/{player_name}'):
+        os.makedirs(f'csv/{player_name}')
 
     # HTML 테이블 읽기
     dfs = pd.read_html(url_df)
@@ -37,14 +37,14 @@ def process_match_logs(url_df, log_type):
     df = df[df['Comp'] != 'EFL Cup']
 
     # DataFrame을 CSV 파일로 저장
-    df.to_csv(f'{player_name}/{player_name}_{log_type.lower()}.csv', index=False)
+    df.to_csv(f'csv/{player_name}/{player_name}_{log_type.lower()}.csv', index=False)
     
 def merged_csv(player):
-    df1 = pd.read_csv(f'{player}/{player}_summary.csv')
-    df2 = pd.read_csv(f'{player}/{player}_possession.csv')
-    df3 = pd.read_csv(f'{player}/{player}_defense.csv')
-    df4 = pd.read_csv(f'{player}/{player}_passing.csv')
-    df5 = pd.read_csv(f'{player}/{player}_passing_types.csv')
+    df1 = pd.read_csv(f'csv/{player}/{player}_summary.csv')
+    df2 = pd.read_csv(f'csv/{player}/{player}_possession.csv')
+    df3 = pd.read_csv(f'csv/{player}/{player}_defense.csv')
+    df4 = pd.read_csv(f'csv/{player}/{player}_passing.csv')
+    df5 = pd.read_csv(f'csv/{player}/{player}_passing_types.csv')
     
     df2 = df2.rename(columns={'Carries 1/3': 'Carries Fin 3rd'})
     df4 = df4.rename(columns={'1/3': 'Passes Fin 3rd'})
@@ -64,11 +64,11 @@ def merged_csv(player):
     # merged_df = pd.concat([merged_df, df4], ignore_index=True)
 
     # 합친 데이터프레임을 CSV 파일로 저장
-    merged_df.to_csv(f'{player}/{player}_merged.csv', index=False)
+    merged_df.to_csv(f'csv/{player}/{player}_merged.csv', index=False)
 
 # 선수 이름 바꾸면서 스크래핑
 player_name = 'Cody-Gakpo' 
-player_id = 'b8e740fb'
+player_id = '1971591f'
 url_possession = f'https://fbref.com/en/players/{player_id}/matchlogs/2023-2024/possession/{player_name}-Match-Logs'
 process_match_logs(url_possession, 'Possession')
 

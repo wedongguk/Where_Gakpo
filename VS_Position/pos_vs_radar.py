@@ -61,6 +61,6 @@ def pos_radar(data):
     print(mid_value)
     print(lw_value)
 
-summary_data=dataget('Cody-Gakpo/Cody-Gakpo_summary.csv')
+data=dataget('csv/Cody-Gakpo/Cody-Gakpo_merged.csv')
 
-pos_radar(summary_data)
+pos_radar(data)
