@@ -33,4 +33,4 @@ def fw_player_scatter(player1, player2, player3, stat1, stat2):
 cody_gakpo_data=dataget('Cody-Gakpo/Cody-Gakpo_merged.csv')
 diogo_jota_data=dataget('Diogo-Jota/Diogo-Jota_merged.csv')
 darwin_nunez_data=dataget('Darwin-Nunez/Darwin-Nunez_merged.csv')
-fw_player_scatter(cody_gakpo_data, diogo_jota_data, darwin_nunez_data, 'Min', 'Touches Att 3rd') #비교 스텟 바꿔가면서 반복
+fw_player_scatter(cody_gakpo_data, diogo_jota_data, darwin_nunez_data, 'Min', 'Performance Gls') #비교 스텟 바꿔가면서 반복

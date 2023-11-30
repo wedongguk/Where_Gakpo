@@ -23,7 +23,7 @@ def pos_radar(data):
     lw_value= []
     # 각 포지션을 포함하는 행만 선택
     fw_data = data[data['Pos'].str.contains('FW')]
-    mid_data = data[data['Pos'].isin(['LM','RM'])]
+    mid_data = data[data['Pos'].str.contains('LM|RM')]
     lw_data = data[data['Pos'].str.contains('LW')]
     
     append_data(fw_value, fw_data)

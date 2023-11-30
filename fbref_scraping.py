@@ -45,6 +45,9 @@ def merged_csv(player):
     df3 = pd.read_csv(f'{player}/{player}_defense.csv')
     df4 = pd.read_csv(f'{player}/{player}_passing.csv')
     df5 = pd.read_csv(f'{player}/{player}_passing_types.csv')
+    
+    df2 = df2.rename(columns={'Carries 1/3': 'Carries Fin 3rd'})
+    df4 = df4.rename(columns={'1/3': 'Passes Fin 3rd'})
 
     # 두 데이터프레임을 합치기
     common_columns = set(df1.columns) & set(df2.columns)
@@ -64,7 +67,7 @@ def merged_csv(player):
     merged_df.to_csv(f'{player}/{player}_merged.csv', index=False)
 
 # 선수 이름 바꾸면서 스크래핑
-player_name = 'Ryan-Gravenberch' 
+player_name = 'Cody-Gakpo' 
 player_id = 'b8e740fb'
 url_possession = f'https://fbref.com/en/players/{player_id}/matchlogs/2023-2024/possession/{player_name}-Match-Logs'
 process_match_logs(url_possession, 'Possession')
@@ -80,6 +83,5 @@ process_match_logs(url_passing_types, 'Passing_Types')
 
 url_summary = f'https://fbref.com/en/players/{player_id}/matchlogs/2023-2024/{player_name}-Match-Logs'
 process_match_logs(url_summary, 'Summary')
-
 
 merged_csv(player_name)

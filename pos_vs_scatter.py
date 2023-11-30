@@ -10,7 +10,7 @@ def dataget(url):
 def pos(data, stat1, stat2):
     # 각 포지션을 포함하는 행만 선택
     fw_data = data[data['Pos'].str.contains('FW')]
-    mid_data = data[data['Pos'].isin(['LM','RM'])]
+    mid_data = data[data['Pos'].str.contains('LM|RM')]
     lw_data = data[data['Pos'].str.contains('LW')]
     
     #그래프 그리기
@@ -30,5 +30,5 @@ def pos(data, stat1, stat2):
     plt.savefig('VS_Position/'+stat2+'&'+stat1+'.png',dpi=300)
     plt.show()
 
-summary_data=dataget('Cody-Gakpo/Cody-Gakpo_summary.csv')
-pos(summary_data,'Take-Ons Att', 'Take-Ons Succ') #비교 스텟 바꿔가면서 반복
+data=dataget('Cody-Gakpo/Cody-Gakpo_merged.csv')
+pos(data,'Carries Carries', 'Carries PrgC') #비교 스텟 바꿔가면서 반복
