@@ -9,12 +9,12 @@ def dataget(url):
 
 def append_data(value, data):
     value.append((data['Performance Gls'].sum() / (data['Min'].sum() / 90)) / (data['Expected xG'].sum() / (data['Min'].sum() / 90)) if data['Expected xG'].sum() != 0 else 0.0)
-    value.append((data['Performance Ast'].sum() / (data['Min'].sum() / 90)) / (data['Expected xAG'].sum() / (data['Min'].sum() / 90)) if data['Expected xAG'].sum() != 0 else 0.0)
+    value.append((data['Performance Ast'].sum() / (data['Min'].sum() / 90)) / (data['xA'].sum() / (data['Min'].sum() / 90)) if data['xA'].sum() != 0 else 0.0)
     value.append((data['SCA GCA'].sum() / (data['Min'].sum() / 90)) / (data['SCA SCA'].sum() / (data['Min'].sum() / 90)) if data['SCA SCA'].sum() != 0 else 0.0)
     value.append(((data['Tackles TklW'].sum() +  data['Int'].sum())/ (data['Min'].sum() / 90)) / (data['Tkl+Int'].sum() / (data['Min'].sum() / 90)) if data['Tkl+Int'].sum() != 0 else 0.0)
     value.append((data['Touches Att 3rd'].sum() / (data['Min'].sum() / 90)) / (data['Touches Touches'].sum() / (data['Min'].sum() / 90)) if data['Touches Touches'].sum() != 0 else 0.0)
     value.append((data['Passes Cmp'].sum() / (data['Min'].sum() / 90)) / (data['Passes Att'].sum() / (data['Min'].sum() / 90)) if data['Passes Att'].sum() != 0 else 0.0)
-    value.append((data['Carries Fin 3rd'].sum() / (data['Min'].sum() / 90)) / (data['Carries Carries'].sum() / (data['Min'].sum() / 90)) if data['Carries Carries'].sum() != 0 else 0.0)
+    value.append((data['Carries Fin 3rd'].sum() / (data['Min'].sum() / 90)) / (data['Carries PrgC'].sum() / (data['Min'].sum() / 90)) if data['Carries PrgC'].sum() != 0 else 0.0)
     value.append((data['Performance SoT'].sum() / (data['Min'].sum() / 90)) / (data['Performance Sh'].sum() / (data['Min'].sum() / 90)) if data['Performance Sh'].sum() != 0 else 0.0)
 
 def fw_radar(player1, player2, player3, player4, player5):

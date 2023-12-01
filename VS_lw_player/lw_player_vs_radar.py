@@ -9,13 +9,13 @@ def dataget(url):
 
 def append_data(value, data):
     value.append((data['Performance Gls'].sum() / (data['Min'].sum() / 90)) / (data['Expected xG'].sum() / (data['Min'].sum() / 90)) if data['Expected xG'].sum() != 0 else 0.0)
-    value.append((data['Performance Ast'].sum() / (data['Min'].sum() / 90)) / (data['Expected xAG'].sum() / (data['Min'].sum() / 90)) if data['Expected xAG'].sum() != 0 else 0.0)
+    value.append((data['Performance Ast'].sum() / (data['Min'].sum() / 90)) / (data['xA'].sum() / (data['Min'].sum() / 90)) if data['xA'].sum() != 0 else 0.0)
     value.append((data['CrsPA'].sum() / (data['Min'].sum() / 90)) / (data['Pass Types Crs'].sum() / (data['Min'].sum() / 90)) if data['Pass Types Crs'].sum() != 0 else 0.0)
     value.append((data['Take-Ons Succ'].sum() / (data['Min'].sum() / 90)) / (data['Take-Ons Att'].sum() / (data['Min'].sum() / 90)) if data['Take-Ons Att'].sum() != 0 else 0.0)
-    value.append((data['Carries CPA'].sum() / (data['Min'].sum() / 90)) / (data['Carries Carries'].sum() / (data['Min'].sum() / 90)) if data['Carries Carries'].sum() != 0 else 0.0)
-    value.append((data['Carries Fin 3rd'].sum() / (data['Min'].sum() / 90)) / (data['Carries Carries'].sum() / (data['Min'].sum() / 90)) if data['Carries Carries'].sum() != 0 else 0.0)
+    value.append((data['Carries CPA'].sum() / (data['Min'].sum() / 90)) / (data['Carries PrgC'].sum() / (data['Min'].sum() / 90)) if data['Carries PrgC'].sum() != 0 else 0.0)
+    value.append((data['Carries Fin 3rd'].sum() / (data['Min'].sum() / 90)) / (data['Carries PrgC'].sum() / (data['Min'].sum() / 90)) if data['Carries PrgC'].sum() != 0 else 0.0)
     value.append((data['SCA GCA'].sum() / (data['Min'].sum() / 90)) / (data['SCA SCA'].sum() / (data['Min'].sum() / 90)) if data['SCA SCA'].sum() != 0 else 0.0)
-    value.append((data['PPA'].sum() / (data['Min'].sum() / 90)) / (data['Passes Cmp'].sum() / (data['Min'].sum() / 90)) if data['Passes Cmp'].sum() != 0 else 0.0)
+    value.append((data['PPA'].sum() / (data['Min'].sum() / 90)) / (data['Passes PrgP'].sum() / (data['Min'].sum() / 90)) if data['Passes PrgP'].sum() != 0 else 0.0)
 
 def fw_radar(player1, player2, player3):
     categories = ['Finishing', 'Assist', 'Crros into PA', 'Dribble', 'Box Carry', '3rd Carry', 'GCA', 'Pass into PA']

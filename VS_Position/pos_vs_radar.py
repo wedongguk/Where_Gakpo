@@ -9,7 +9,7 @@ def dataget(url):
 
 def append_data(value, data):
     value.append((data['Performance Gls'].sum() / (data['Min'].sum() / 90)) / (data['Expected xG'].sum() / (data['Min'].sum() / 90)) if data['Expected xG'].sum() != 0 else 0.0)
-    value.append((data['Performance Ast'].sum() / (data['Min'].sum() / 90)) / (data['Expected xAG'].sum() / (data['Min'].sum() / 90)) if data['Expected xAG'].sum() != 0 else 0.0)
+    value.append((data['Performance Ast'].sum() / (data['Min'].sum() / 90)) / (data['xA'].sum() / (data['Min'].sum() / 90)) if data['xA'].sum() != 0 else 0.0)
     value.append((data['Passes Cmp'].sum() / (data['Min'].sum() / 90)) / (data['Passes Att'].sum() / (data['Min'].sum() / 90)) if data['Passes Att'].sum() != 0 else 0.0)
     value.append((data['Take-Ons Succ'].sum() / (data['Min'].sum() / 90)) / (data['Take-Ons Att'].sum() / (data['Min'].sum() / 90)) if data['Take-Ons Att'].sum() != 0 else 0.0)
     value.append((data['Passes PrgP'].sum() / (data['Min'].sum() / 90)) / (data['Passes Cmp'].sum() / (data['Min'].sum() / 90)) if data['Passes Cmp'].sum() != 0 else 0.0)
