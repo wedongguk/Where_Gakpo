@@ -13,11 +13,12 @@ def append_data(value, data):
     value.append((data['Passes Cmp'].sum() / (data['Min'].sum() / 90)) / (data['Passes Att'].sum() / (data['Min'].sum() / 90)) if data['Passes Att'].sum() != 0 else 0.0)
     value.append((data['Take-Ons Succ'].sum() / (data['Min'].sum() / 90)) / (data['Take-Ons Att'].sum() / (data['Min'].sum() / 90)) if data['Take-Ons Att'].sum() != 0 else 0.0)
     value.append((data['Passes PrgP'].sum() / (data['Min'].sum() / 90)) / (data['Passes Cmp'].sum() / (data['Min'].sum() / 90)) if data['Passes Cmp'].sum() != 0 else 0.0)
+    value.append((data['Touches Att 3rd'].sum() / (data['Min'].sum() / 90)) / (data['Touches Touches'].sum() / (data['Min'].sum() / 90)) if data['Touches Touches'].sum() != 0 else 0.0)
     value.append((data['Carries PrgC'].sum() / (data['Min'].sum() / 90)) / (data['Carries Carries'].sum() / (data['Min'].sum() / 90)) if data['Carries Carries'].sum() != 0 else 0.0)
     value.append((data['Performance SoT'].sum() / (data['Min'].sum() / 90)) / (data['Performance Sh'].sum() / (data['Min'].sum() / 90)) if data['Performance Sh'].sum() != 0 else 0.0)
 
 def pos_radar(data):
-    categories = ['Finishing', 'Assist', 'Passing', 'Dribbling', 'Prg Passing', 'Prg Carry', 'Shooting']
+    categories = ['Finishing', 'Assist', 'Passing', 'Dribbling', 'Prg Passing', 'Touches', 'Prg Carry', 'Shooting']
     fw_value = []
     mid_value = []
     lw_value= []

@@ -31,4 +31,4 @@ def pos(data, stat1, stat2):
     plt.show()
 
 data=dataget('csv/Cody-Gakpo/Cody-Gakpo_merged.csv')
-pos(data,'xA', 'Performance Ast') #비교 스텟 바꿔가면서 반복
+pos(data,'Min', 'Carries CPA') #비교 스텟 바꿔가면서 반복
