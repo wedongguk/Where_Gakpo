@@ -1,2 +1,1 @@
-# :soccer: Where Gakpo :interrobang:
-
+# :soccer: Where Gakpo
