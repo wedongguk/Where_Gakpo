@@ -90,4 +90,6 @@ Radar Plot을 보면 LW에서는 드리블을 제외한 모든 스텟에서 상�
 'Finishing'은 90당 기대득점 대비 득점, 'Assist'는 90당 기대 어시스트 대비 어시스트, 'BOX Touch'는 90당 터치 대비 패널티 박스 안 터치, '3rd Touch'는 90분 당 터치 대비 파이널 써드에서의 터치, 'Box Carry'는 90분 당 전진 드리블 대비 패널티 박스로의 드리블, '3rd Carry'는 90분 당 전진 드리블 대비 파이널 써드로의 드리블, 'GCA'는 90분 당 SCA 대비 GCA, 'Shooting'은 90분 당 슈팅 대비 유효슈팅을 의미 합니다.
 
 ![FW Radar](VS_fw_player/img/vs_fw_radar.png)
+![MID Radar](VS_mid_player/img/vs_mid_radar.png)
+![LW Radar](VS_lw_player/img/vs_lw_radar.png)
 
