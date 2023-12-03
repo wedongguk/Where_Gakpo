@@ -21,11 +21,14 @@
 
 이 세 포지션이 공통으로 중요하다고 생각하는 스텟들을 경기를 뛴 시간 대비 얼마나 쌓았나 비교해보았습니다.
 
+아래의 Scatter Plot에서 빨간색이 포워드, 초록색이 미드필더, 파란색이 윙을 나타냅니다.
+
 1. 공격 포인트
 
 |Goal|Asist|Shot|Shot On Target|Shot Creating Action|
 |---|---|---|---|---|
 |![Position Scatter](VS_Position/img/Performance%20Gls&Min.png)|![Position Scatter](VS_Position/img/Performance%20Ast&Min.png)|![Position Scatter](VS_Position/img/Performance%20Sh&Min.png)|![Position Scatter](VS_Position/img/Performance%20SoT&Min.png)|![Position Scatter](VS_Position/img/SCA%20SCA&Min.png)|
+
 
 2. 패스
 
@@ -41,6 +44,9 @@
 
 4. 볼 컨트롤
 
+|Take-Ons|Progressive Recieive|Touch Final 3rd|Touch Penalty Area|
+|---|---|---|---|
+|![Position Scatter](VS_Position/img/Take-Ons%20Succ&Min.png)|![Position Scatter](VS_Position/img/Receiving%20PrgR&Min.png)|![Position Scatter](VS_Position/img/Touches%20Att%203rd&Min.png)|![Position Scatter](VS_Position/img/Touches%20Att%20Pen&Min.png)|
 
 
 
