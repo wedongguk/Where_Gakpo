@@ -28,6 +28,7 @@
 |Goal|Asist|Shot|Shot On Target|Shot Creating Action|
 |---|---|---|---|---|
 |![Position Scatter](VS_Position/img/Performance%20Gls&Min.png)|![Position Scatter](VS_Position/img/Performance%20Ast&Min.png)|![Position Scatter](VS_Position/img/Performance%20Sh&Min.png)|![Position Scatter](VS_Position/img/Performance%20SoT&Min.png)|![Position Scatter](VS_Position/img/SCA%20SCA&Min.png)|
+
 FW와 MID에서 각각 1골, FW에서 1어시를 적립하였고, 같은 시간을 뛰었을 때 LW에서 슈팅이 더 많지만 유효슈팅은 비슷하다는 것을 알 수 있었습니다. 
 
 2. 패스
@@ -35,12 +36,15 @@ FW와 MID에서 각각 1골, FW에서 1어시를 적립하였고, 같은 시간�
 |Pass Complete Percent|Progressive Pass|Pass Final 3rd|Pass Penalty Area|Key Pass|
 |---|---|---|---|---|
 |![Position Scatter](VS_Position/img/Passes%20Cmp%25&Min.png)|![Position Scatter](VS_Position/img/Passes%20PrgP&Min.png)|![Position Scatter](VS_Position/img/Passes%20Fin%203rd&Min.png)|![Position Scatter](VS_Position/img/PPA&Min.png)|![Position Scatter](VS_Position/img/KP&Min.png)|
+
 같은 시간을 뛰었을 때 평균적으로 MID에서 패스정확도, 전진패스, 파이널 써드 지역으로 패스, 패널티 지역으로 패스, 키패스 횟수 모두 높다는 것을 알 수 있었습니다.
+
 3. 볼 운반
 
 |Progressive Carry Distance|Progressive Carry|Carry Final 3rd|Carry Penalty Area|
 |---|---|---|---|
 |![Position Scatter](VS_Position/img/Carries%20PrgDist&Min.png)|![Position Scatter](VS_Position/img/Carries%20PrgC&Min.png)|![Position Scatter](VS_Position/img/Carries%20Fin%203rd&Min.png)|![Position Scatter](VS_Position/img/Carries%20CPA&Min.png)|
+
 Progressive Carry란 쉽게 말하면 전진 드리블, 보다 정확한 의미는 "상대진영에서 골라인을 향해 적어도 10야드 볼 이동" 입니다. 
 
 볼 운반 또한 같은 시간을 뛰었을 때 MID에서의 스텟이 평균적으로 높다는 사실을 알 수 있었습니다.
@@ -50,6 +54,7 @@ Progressive Carry란 쉽게 말하면 전진 드리블, 보다 정확한 의미�
 |Take-Ons|Progressive Recieive|Touch Final 3rd|Touch Penalty Area|
 |---|---|---|---|
 |![Position Scatter](VS_Position/img/Take-Ons%20Succ&Min.png)|![Position Scatter](VS_Position/img/Receiving%20PrgR&Min.png)|![Position Scatter](VS_Position/img/Touches%20Att%203rd&Min.png)|![Position Scatter](VS_Position/img/Touches%20Att%20Pen&Min.png)|
+
 Take-Ons란 완전히 등 뒤로 재친 수비수의 숫자를 의미합니다.
 
 볼 컨트롤 부분에서는 같은 시간을 뛰었을 때 세 포지션이 비슷한 스텟을 가지지만, FW가 약간 높은 수치를 보인다는 것을 알 수 있었습니다.
