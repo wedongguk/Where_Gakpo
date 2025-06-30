@@ -1,5 +1,5 @@
 # :soccer: Where Gakpo ⁉
-21101203 위동국 OSS Project
+2023 Open Source Software Project
 
 ### 프로젝트 주제
 코디 각포의 최적의 포지션은 어디인가
